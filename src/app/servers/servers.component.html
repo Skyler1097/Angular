@@ -1,8 +1,13 @@
-<link rel="stylesheet" href="servers.component.css">
+<label>Server Name</label>
 <body>
 <h1>Line 2</h1>
 <p>This block is from serversss</p>
-<button class="btn btn-primary" [disabled]= "!allowNewServer" [innerText] = "allowNewServer" (click) = "onCreateServer()"> Add Server </button>
+<input type="text", class="form-control", (input)="updateServerName($event)">
+<p>{{serverName}}</p>
+
+<button class="btn btn-primary" [disabled]= "!allowNewServer" [innerText] = "allowNewServer" 
+(click) = "onCreateServer()"> Add Server </button>
+
 <p> {{serverCreationStatus}} </p>
 <app-server></app-server>
 <hr>
