@@ -26,7 +26,6 @@ export class ServersComponent implements OnInit {
   }
   clearField(){
     this.serverName = "";
-    this.updateServerName(null)
     this.clearedField =  "";
   }  
 }
