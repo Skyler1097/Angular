@@ -27,5 +27,6 @@ export class ServersComponent implements OnInit {
   clearField(){
     this.serverName = "";
     this.clearedField =  "";
+    this.serverCreationStatus = 'No server was created!'
   }  
 }
