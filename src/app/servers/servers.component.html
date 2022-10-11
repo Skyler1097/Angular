@@ -2,11 +2,11 @@
 <body>
 <h1>Line 2</h1>
 <p>This block is from serversss</p>
-<input type="text", class="form-control", (input)="updateServerName($event)">
+<input type="text" class="form-control" (input)="updateServerName($event)">
 <p>{{serverName}}</p>
 
-<button class="btn btn-primary" [disabled]= "!allowNewServer" [innerText] = "allowNewServer" 
-(click) = "onCreateServer()"> Add Server </button>
+<button class="btn btn-primary" [disabled]= "!allowNewServer" 
+(click) = "onCreateServer()"> Create {{serverName}} server </button>
 
 <p> {{serverCreationStatus}} </p>
 <app-server></app-server>
